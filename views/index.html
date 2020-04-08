@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<section id="intro">
+    <header>
+        <a href="/">
+            <img src="img\logo.png" alt="Logo do site">
+        </a>
+    </header>
+
+    <main>
+        <p>Lorem Ipsum is simply <strong> dummy text of the printing
+            and typesetting industry</strong>. Lorem Ipsum has been 
+            the industry's standard dummy text ever since 
+            the 1500s
+        </p>
+        
+        <p>Lorem Ipsum is simply <strong>dummy text of the printing
+            and typesetting industry</strong>. Lorem Ipsum has been 
+            the industry's standard dummy text ever since 
+            the 1500s
+        </p>
+
+        <p>Lorem Ipsum is simply <strong>dummy text of the printing
+        and typesetting industry</strong>. Lorem Ipsum has been 
+        the industry's standard dummy text ever since 
+        the 1500s
+        </p>
+
+    </main>
+
+    <section id="buttons">
+        <button onclick="onOff()"> + Adicionar Ideia </button>
+        <a href="/ideias" class="button"> Ver Ideias </a>
+    </section>
+
+    <footer id="footer">Com vontade de aprender BelageFaria ❤ </footer>
+
+</section>
+
+<section id="direita">
+    {% include "all_ideias.html" %}
+</section>
+
+{% endblock %}
